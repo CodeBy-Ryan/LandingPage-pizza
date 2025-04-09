@@ -93,6 +93,7 @@ p {
   display: inline-block;
   margin-top: 35px;
   height: 35px;
+  line-height: 35px;
   width: 600px;
   font-size: 20px;
   font-weight: 300;
