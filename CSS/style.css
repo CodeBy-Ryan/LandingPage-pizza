@@ -12,6 +12,7 @@ body {
 }
 
 header {
+  margin-top: 10px;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
@@ -114,4 +115,68 @@ p {
 
 .comprar-section:hover {
   background: rgb(255, 199, 150);
+}
+
+@media (max-width: 1500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .Pizza1 {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 12px;
+    margin: auto;
+    width: 400px;
+  }
+
+  .comprar-section {
+    width: 400px;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    margin-left: 100px;
+  }
+
+  .logotipo {
+    height: 80px;
+    margin-right: 20px;
+  }
+
+  .links {
+    gap: 14px;
+  }
+
+  main {
+    margin-left: 100px;
+  }
+
+  .Pizza1 {
+    height: 250px;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
 }
