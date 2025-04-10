@@ -1,10 +1,11 @@
 /* Criação de variáveis - cor */
 :root {
-  --terracotta: #e07a5f;
+  --Brunswick: #37584b;
   --sage: #81b29a;
-  --mustard: #f2cc8f;
-  --cream: #f4f1de;
+  --Jasper: #da5844;
+  --Vanilla: #dfc990;
   --charcoal: #3d405b;
+  --Alice: #d4e0ed;
 }
 
 /* Formatando os padrões da minha Página */
@@ -17,7 +18,7 @@
 
 /* Definindo Padrão para o corpo do meu site */
 body {
-  background: var(--cream);
+  background: var(--Vanilla);
   color: var(--charcoal);
   overflow-x: hidden; /* Serve para não criar um scroll horizontal */
 }
@@ -28,7 +29,7 @@ header {
   top: 0;
   width: 100%;
   padding: 1.5rem 5%;
-  background: #f4f1de93;
+  background: #dfc9908f;
   backdrop-filter: blur(10px);
   z-index: 100;
   display: flex;
@@ -39,7 +40,7 @@ header {
 .logotipo-pizza {
   font-size: 1.8rem;
   font-weight: 900;
-  color: var(--terracotta);
+  color: var(--Brunswick);
   text-transform: uppercase;
 }
 
@@ -56,12 +57,12 @@ header {
 }
 
 .nav-links a:hover {
-  color: var(--terracotta);
+  color: var(--Brunswick);
 }
 
 .cta-btn {
-  background: var(--terracotta);
-  color: var(--cream);
+  background: var(--Brunswick);
+  color: #ffffff;
   padding: 0.5rem 2rem;
   border-radius: 35px;
   cursor: pointer;
