@@ -33,7 +33,7 @@ header {
   backdrop-filter: blur(10px);
   z-index: 100;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -75,3 +75,53 @@ header {
 }
 
 /* Modern Home Page */
+
+.home {
+  min-height: 100vh;
+  padding: 8rem 5% 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.home h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #666;
+}
+
+.home p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.home-img {
+  position: relative;
+}
+
+.home-img img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s;
+  filter: drop-shadow(26px 18px 25px rgba(36, 35, 35, 0.74));
+}
+
+.home-img:hover img {
+  transform: scale(1.02);
+}
