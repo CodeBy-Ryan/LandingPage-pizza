@@ -40,7 +40,7 @@ header {
   top: 0;
   width: 100%;
   padding: 1.5rem 5%;
-  background: #00464391;
+  background: #0046435b;
   backdrop-filter: blur(10px);
   z-index: 100;
   display: flex;
@@ -97,6 +97,8 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 4rem;
+  border-bottom: 10px solid var(--Background);
+  margin-bottom: -1rem;
 }
 
 .decor {
@@ -106,8 +108,8 @@ header {
 }
 
 .decor-pizza {
-  top: 5%;
-  left: 26%;
+  top: 65%;
+  left: 16%;
   filter: blur(2px);
   width: 25rem;
 }
@@ -229,4 +231,103 @@ header {
   .home-img img {
     height: 20rem;
   }
+}
+
+/* Modern MENU Page */
+
+.Menu {
+  padding: 6rem 5%;
+  background: var(--background-seçãomenu);
+}
+
+h2.cardapio {
+  color: var(--headline-seçãomenu);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: -3rem;
+  font-weight: 700;
+}
+
+h4.cardapio {
+  color: var(--headline-seçãomenu);
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.menu-filters {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.btn-filter {
+  background: transparent;
+  border-radius: 30px;
+  border: 2px solid var(--card-background-seçãomenu);
+  color: var(--card-background-seçãomenu);
+  padding: 0.8rem 4rem;
+  cursor: pointer;
+  transition: all 1.2s;
+}
+
+.btn-filter.active,
+.btn-filter:hover {
+  background: var(--Buttontxt);
+  color: var(--card-headline-seçãomenu);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.menu-caixa {
+  background: var(--card-background-seçãomenu);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-caixa:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.menu-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-caixa-conteudo {
+  padding: 1.5rem;
+}
+
+.menu-caixa h2 {
+  font-size: 25px;
+  color: var(--card-headline-seçãomenu);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.menu-caixa p {
+  font-size: 15px;
+  color: var(--card-paragraph-seçãomenu);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 15px;
+  color: var(--Buttontxt);
+  font-weight: 700;
+  text-align: center;
+  background: var(--card-headline-seçãomenu);
+  padding: 0.4rem;
 }
