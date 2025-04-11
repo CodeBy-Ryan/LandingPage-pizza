@@ -1,11 +1,22 @@
 /* Criação de variáveis - cor */
 :root {
-  --Brunswick: #37584b;
-  --sage: #81b29a;
+  /* SEÇÃO MAIN E MENU DE NAV */
+  --Button: #f9bc60;
+  --Paragraph: #abd1c6;
+  --Background: #004643;
+  --Headline: #fffffe;
+  --Buttontxt: #001e1d;
+
+  /* SEÇÃO CARDÁPIO */
   --Jasper: #da5844;
-  --Vanilla: #dfc990;
-  --charcoal: #3d405b;
-  --Alice: #d4e0ed;
+  --background-seçãomenu: #abd1c6;
+  --headline-seçãomenu: #001e1d;
+  --subheadline-seçãomenu: #0f3433;
+  --card-headline-seçãomenu: #fffffe;
+  --card-background-seçãomenu: #004643;
+  --card-paragraph-seçãomenu: #abd1c6;
+
+  /* SEÇÃO Features */
 }
 
 /* Formatando os padrões da minha Página */
@@ -18,8 +29,8 @@
 
 /* Definindo Padrão para o corpo do meu site */
 body {
-  background: var(--Vanilla);
-  color: var(--charcoal);
+  background: var(--Background);
+  color: var(--Headline);
   overflow-x: hidden; /* Serve para não criar um scroll horizontal */
 }
 
@@ -29,7 +40,7 @@ header {
   top: 0;
   width: 100%;
   padding: 1.5rem 5%;
-  background: #dfc9908f;
+  background: #00464391;
   backdrop-filter: blur(10px);
   z-index: 100;
   display: flex;
@@ -40,7 +51,7 @@ header {
 .logotipo-pizza {
   font-size: 1.8rem;
   font-weight: 900;
-  color: var(--Brunswick);
+  color: var(--Button);
   text-transform: uppercase;
 }
 
@@ -57,12 +68,12 @@ header {
 }
 
 .nav-links a:hover {
-  color: var(--Brunswick);
+  color: var(--Button);
 }
 
 .cta-btn {
-  background: var(--Brunswick);
-  color: #ffffff;
+  background: var(--Button);
+  color: var(--Buttontxt);
   padding: 0.5rem 2rem;
   border-radius: 35px;
   cursor: pointer;
@@ -101,14 +112,14 @@ header {
   line-height: 1;
   margin-bottom: 1.5rem;
   font-style: italic;
-  color: #666;
+  color: var(--Paragraph);
 }
 
 .home p {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 2rem;
-  color: #666;
+  color: var(--Paragraph);
 }
 
 .home-img {
