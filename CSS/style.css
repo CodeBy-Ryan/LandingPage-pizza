@@ -240,7 +240,7 @@ header {
   }
 }
 
-/* Telas menores que 700px (Celulares) */
+/* Telas menores que 850px (Celulares) */
 @media (max-width: 850px) {
   .nav-links,
   .cta-nav {
@@ -264,7 +264,7 @@ header {
   }
 
   .home-img img {
-    height: 20rem;
+    height: 45vh;
   }
 }
 
