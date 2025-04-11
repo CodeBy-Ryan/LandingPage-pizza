@@ -97,8 +97,7 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 4rem;
-  border-bottom: 10px solid var(--Background);
-  margin-bottom: -1rem;
+  margin-bottom: -4rem;
 }
 
 .decor {
@@ -108,10 +107,10 @@ header {
 }
 
 .decor-pizza {
-  top: 65%;
-  left: 16%;
-  filter: blur(2px);
-  width: 25rem;
+  top: 55%;
+  left: 1%;
+  /* filter: blur(8px); */
+  width: 40rem;
 }
 
 .decor-folha {
@@ -120,6 +119,33 @@ header {
   width: 25rem;
   z-index: 11;
   filter: blur(5px);
+}
+
+.decor-folha-2 {
+  top: 18%;
+  left: 5%;
+  width: 15rem;
+  z-index: 11;
+  filter: blur(2px);
+  transform: rotate(-90deg);
+}
+
+.decor-folha-3 {
+  top: 55%;
+  left: 44%;
+  width: 25rem;
+  z-index: 11;
+  filter: blur(1px);
+  transform: rotate(180deg);
+}
+
+.decor-folha-4 {
+  top: 2%;
+  left: 40%;
+  width: 25rem;
+  z-index: 11;
+  filter: blur(1px);
+  transform: rotate(-60deg);
 }
 
 .home-content {
@@ -166,9 +192,18 @@ header {
 /* RESPONSIVIDADE */
 
 /* Telas menores que 1000px (Tablet e intermediárias) */
+@media (max-width: 1300px) {
+  .decor-pizza {
+    display: none;
+  }
+}
+
 @media (max-width: 1000px) {
   .decor-pizza,
-  .decor-folha {
+  .decor-folha,
+  .decor-folha-4,
+  .decor-folha-2,
+  .decor-folha-3 {
     display: none; /* ou reduzir tamanho */
   }
 
@@ -236,8 +271,11 @@ header {
 /* Modern MENU Page */
 
 .Menu {
-  padding: 6rem 5%;
   background: var(--background-seçãomenu);
+  border-top: 10px solid var(--Button);
+  border-top-left-radius: 30% 10%;
+  border-top-right-radius: 30% 10%;
+  padding: 6rem 5%;
 }
 
 h2.cardapio {
@@ -266,12 +304,32 @@ h4.cardapio {
 
 .btn-filter {
   background: transparent;
-  border-radius: 30px;
   border: 2px solid var(--card-background-seçãomenu);
   color: var(--card-background-seçãomenu);
-  padding: 0.8rem 4rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
   cursor: pointer;
-  transition: all 1.2s;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-filter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-25deg);
+  transition: left 0.5s;
+}
+
+.btn-filter:hover::before {
+  left: 130%;
 }
 
 .btn-filter.active,
@@ -330,4 +388,16 @@ h4.cardapio {
   text-align: center;
   background: var(--card-headline-seçãomenu);
   padding: 0.4rem;
+}
+
+@media (max-width: 850px) {
+  .Menu {
+    border-top-left-radius: 200rem;
+    border-top-right-radius: 200rem;
+  }
+
+  .Menu h2 {
+    font-size: 210%;
+    margin-top: 2rem;
+  }
 }
