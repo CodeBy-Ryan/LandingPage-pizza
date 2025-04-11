@@ -29,7 +29,7 @@
 
 /* Definindo Padrão para o corpo do meu site */
 body {
-  background: var(--Background);
+  background: linear-gradient(135deg, var(--Background) 45%, var(--Buttontxt));
   color: var(--Headline);
   overflow-x: hidden; /* Serve para não criar um scroll horizontal */
 }
@@ -79,21 +79,45 @@ header {
   cursor: pointer;
   border: none;
   transition: transform 0.3s;
+  transition: background 0.3s;
 }
 
 .cta-btn:hover {
   transform: translateY(-5px);
+  background: #ffd9a0;
 }
 
 /* Modern Home Page */
 
 .home {
+  position: relative;
   min-height: 100vh;
   padding: 8rem 5% 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 4rem;
+}
+
+.decor {
+  position: absolute;
+  pointer-events: none; /* se quiser que não atrapalhe cliques */
+  z-index: 10; /* garante que fiquem por cima */
+}
+
+.decor-pizza {
+  top: 5%;
+  left: 26%;
+  filter: blur(2px);
+  width: 25rem;
+}
+
+.decor-folha {
+  top: 2%;
+  left: 75%;
+  width: 25rem;
+  z-index: 11;
+  filter: blur(5px);
 }
 
 .home-content {
@@ -127,16 +151,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
 }
 
 .home-img img {
-  height: 100%;
+  height: 40rem;
   object-fit: cover;
   transition: transform 0.8s;
   filter: drop-shadow(26px 18px 25px rgba(36, 35, 35, 0.74));
-}
-
-.home-img:hover img {
-  transform: scale(1.02);
 }
