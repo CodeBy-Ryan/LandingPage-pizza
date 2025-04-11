@@ -160,3 +160,73 @@ header {
   transition: transform 0.8s;
   filter: drop-shadow(26px 18px 25px rgba(36, 35, 35, 0.74));
 }
+
+/* RESPONSIVIDADE */
+
+/* Telas menores que 1000px (Tablet e intermediárias) */
+@media (max-width: 1000px) {
+  .decor-pizza,
+  .decor-folha {
+    display: none; /* ou reduzir tamanho */
+  }
+
+  .home {
+    grid-template-columns: 1fr; /* só uma coluna */
+    text-align: center;
+    padding: 7rem 8% 4rem;
+    gap: 2px;
+  }
+
+  .home-content {
+    margin: auto;
+  }
+
+  .home-img {
+    margin-top: 0;
+  }
+
+  .home-img img {
+    height: 28rem;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .logotipo-pizza {
+    font-size: 1.4rem;
+  }
+
+  .cta-btn {
+    padding: 0.4rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Telas menores que 700px (Celulares) */
+@media (max-width: 850px) {
+  .nav-links,
+  .cta-nav {
+    display: none;
+  }
+
+  .logotipo-pizza {
+    margin: auto;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home h2 {
+    font-size: 1rem;
+  }
+
+  .home p {
+    font-size: 0.9rem;
+  }
+
+  .home-img img {
+    height: 20rem;
+  }
+}
