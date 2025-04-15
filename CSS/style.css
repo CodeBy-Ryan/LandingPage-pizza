@@ -338,6 +338,88 @@ h4.cardapio {
   color: var(--card-headline-seçãomenu);
 }
 
+.grid-pizza {
+  margin-bottom: 85px;
+}
+
+.grid-list .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.grid-list .grid-item .card-link {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 900px;
+  user-select: none;
+  background: #0046435b;
+  padding: 40px;
+  text-decoration: none;
+  border-radius: 15px;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+  border: 5px solid transparent;
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.05);
+  translate: 0.2s;
+}
+
+.grid-list .grid-item .card-link:hover {
+  border-color: var(--Button);
+}
+
+.grid-list .card-link .grid-img {
+  width: 45%;
+  border-radius: 15px;
+  aspect-ratio: 16 / 14;
+  object-fit: cover;
+}
+
+.grid-list .card-link .content-produto {
+  color: var(--card-headline-seçãomenu);
+}
+
+.grid-list .card-link .content-produto .Price {
+  color: var(--Jasper);
+  background: var(--Button);
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 16px 0 18px;
+  width: fit-content;
+  border-radius: 25px;
+}
+
+.grid-list .card-link .content-produto .card-title {
+  font-weight: 700;
+  font-size: 1.98rem;
+}
+
+.grid-list .card-link .content-produto .p-produto {
+  font-weight: 300;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: justify;
+}
+
+.grid-list .card-link .content-produto .card-button {
+  margin: 28px 0 18px 85%;
+  cursor: pointer;
+  color: var(--Button);
+  background: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: #f9bc60 solid;
+}
+
+.grid-list .card-link .content-produto:hover .card-button {
+  background: var(--Button);
+  color: var(--card-headline-seçãomenu);
+}
+
 @media (max-width: 850px) {
   .Menu {
     border-top-left-radius: 200rem;

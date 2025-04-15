@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Link Icon do Site google fonts - presente nos produtos -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart_checkout"
+    />
+
     <!-- Link Icon do Site -->
+
     <link
       rel="icon"
       href="https://img.icons8.com/doodle/48/pizza--v1.png"
@@ -13,6 +21,7 @@
     <!-- 32X32PX O TAMNHO DO ICON -->
 
     <!-- Link Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,13 +29,22 @@
       rel="stylesheet"
     />
 
+    <!-- Link DAS SETAS DO MENU-CARDÁPIO -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Link CSS -->
+
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>Pizza do Cloudy</title>
   </head>
 
   <body>
     <!-- Menu de navegação / Navigation menu -->
+
     <header>
       <div class="logotipo-pizza">CodeBy Ryan</div>
       <nav class="nav-links">
@@ -74,11 +92,100 @@
         <button class="btn-filter" data-filter="pizza">Pizza</button>
       </div>
 
-      <div class="GRID"></div>
+      <!-- ← Container geral -->
+      <div class="grid-pizza swiper">
+        <!--  ← Conteúdo interno (grid) -->
+        <div class="grid-content">
+          <!--  ← Lista de itens (pode ter várias pizzas) -->
+          <ul class="grid-list swiper-wrapper">
+            <!-- ← Um item (pizza)-->
+            <li class="grid-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="./IMG/svg-alimentos/1-pizza.svg"
+                  alt="Produto-1"
+                  class="grid-img"
+                />
+                <div class="content-produto">
+                  <p class="Price">R$99,99</p>
+                  <h2 class="card-title">Pizzaiolo</h2>
+                  <p class="p-produto">
+                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Accusantium fugiat tempore excepturi eaque. Similique
+                    exercitationem iure ipsam nesciunt, reprehenderit eveniet
+                    excepturi impedit inventore, quibusdam voluptatem eum autem
+                    ut amet quo."
+                  </p>
+                  <button class="card-button material-symbols-outlined">
+                    shopping_cart_checkout
+                  </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="./IMG/svg-alimentos/2-pizza.svg"
+                  alt="Produto-2"
+                  class="grid-img"
+                />
+                <div class="content-produto">
+                  <p class="Price">R$99,99</p>
+                  <h2 class="card-title">Pizzaiolo</h2>
+                  <p class="p-produto">
+                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Accusantium fugiat tempore excepturi eaque. Similique
+                    exercitationem iure ipsam nesciunt, reprehenderit eveniet
+                    excepturi impedit inventore, quibusdam voluptatem eum autem
+                    ut amet quo."
+                  </p>
+                  <button class="card-button material-symbols-outlined">
+                    shopping_cart_checkout
+                  </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="grid-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="./IMG/svg-alimentos/3-pizza.svg"
+                  alt="Produto-1"
+                  class="grid-img"
+                />
+                <div class="content-produto">
+                  <p class="Price">R$99,99</p>
+                  <h2 class="card-title">Pizzaiolo</h2>
+                  <p class="p-produto">
+                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Accusantium fugiat tempore excepturi eaque. Similique
+                    exercitationem iure ipsam nesciunt, reprehenderit eveniet
+                    excepturi impedit inventore, quibusdam voluptatem eum autem
+                    ut amet quo."
+                  </p>
+                  <button class="card-button material-symbols-outlined">
+                    shopping_cart_checkout
+                  </button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
 
       <div class="menu-filters">
         <button class="btn-filter" data-filter="dessert">Sobremesa</button>
       </div>
     </section>
+
+    <!-- LIST DAS SETAS DO MENU-CARDÁPIO-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- LIST SCRIPT-->
+    <script src="/JS/script.js"></script>
   </body>
 </html>
