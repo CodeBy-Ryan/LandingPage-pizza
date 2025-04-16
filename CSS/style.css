@@ -421,6 +421,7 @@ h4.cardapio {
   width: 60px;
   border-radius: 50%;
   border: #f9bc60 solid;
+  font-size: 40px;
 }
 
 .grid-list .card-link .content-produto:hover .card-button {
@@ -518,6 +519,12 @@ h4.cardapio {
 
 .features-content:hover {
   border-color: var(--Buttontxt);
+}
+
+.features-icon {
+  /* height: 60px;
+  width: 60px; */
+  font-size: 40px;
 }
 
 @media (max-width: 850px) {
