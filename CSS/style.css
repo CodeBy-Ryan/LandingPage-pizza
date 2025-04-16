@@ -454,9 +454,6 @@ h4.cardapio {
     margin-top: 2rem;
   }
 
-  .grid-list .grid-item {
-  }
-
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
@@ -481,5 +478,53 @@ h4.cardapio {
 
   .grid-list .card-link .content-produto .card-button {
     margin: 28px 0 18px 40%;
+  }
+}
+
+.features-caixas {
+  background: var(--Button);
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  gap: 20px;
+}
+
+.features-content {
+  background: var(--Jasper);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Altura fixa */
+  width: 60vw;
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 5px solid transparent;
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.05);
+  translate: 0.2s;
+  overflow: hidden; /* Impede conteúdo de estourar */
+}
+
+.features-content:hover {
+  border-color: var(--Buttontxt);
+}
+
+@media (max-width: 850px) {
+  .features-caixas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .features-content {
+    height: 10rem;
+    width: 70vw;
+    padding: 40px;
+    overflow: hidden;
+    font-size: 11px;
+    line-height: 30px;
   }
 }
