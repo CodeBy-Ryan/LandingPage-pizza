@@ -471,6 +471,12 @@ h4.cardapio {
 }
 
 @media (max-width: 700px) {
+  .grid-list .grid-item .card-link {
+    height: 300px;
+    width: 400rem;
+    overflow: hidden;
+  }
+
   .grid-list .card-link .content-produto .Price {
     display: none;
   }
