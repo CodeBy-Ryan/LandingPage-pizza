@@ -460,25 +460,23 @@ h4.cardapio {
     display: none;
   }
 
-  .grid-list .grid-item .card-link {
-    max-width: 100%;
-    flex-direction: column;
-    height: 700px;
-  }
-
-  .swiper-wrapper {
-    /* gap: 80px; */
-  }
-
-  .grid-list .card-link .grid-img {
-    max-width: 100%;
-    height: 300px;
-    width: 450px;
-    border-radius: 15px;
+  .grid-list .card-link .content-produto .Price {
+    margin: 50px 0 10px -30px;
   }
 
   .grid-list .card-link .content-produto .card-button {
-    margin: 28px 0 18px 40%;
+    margin-left: -30px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-list .card-link .content-produto .Price {
+    display: none;
+  }
+
+  .grid-list .card-link .content-produto .card-button {
+    display: none;
   }
 }
 
