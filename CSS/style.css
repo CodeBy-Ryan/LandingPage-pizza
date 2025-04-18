@@ -638,3 +638,72 @@ h4.cardapio {
   }
 }
 
+.about-tt {
+  margin-top: 5rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem;
+  margin-top: 5rem;
+}
+
+.img-about {
+  width: 25rem;
+  border-radius: 50%;
+}
+
+.content-about {
+  padding: 5rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-icons {
+  width: 100%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.about-icons a {
+  text-decoration: none;
+  color: #fffffe;
+}
+
+.maps-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tt-maps .maps-about iframe {
+  width: 100%;
+  height: 30rem;
+  padding: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .img-about {
+    width: 30vw;
+  }
+
+  .content-about {
+    width: 30rem;
+  }
+
+  .about-icons {
+    font-size: 30px;
+  }
+}
