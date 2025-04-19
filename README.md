@@ -10,8 +10,7 @@
 
 Este projeto foi desenvolvido sozinho, onde criei uma landing page responsiva para uma pizzaria.
 
-O objetivo deste projeto não é comercial, mas sim compartilhar conhecimento e promover meu crescimento pessoal e profissional, lembrando que esse é o meu primeiro projeto criando tudo sozinho do zero com coisas que eu aprendi durante esses meses de estudos
-
+O objetivo deste projeto não é de natureza comercial, mas sim compartilhar o conhecimento adquirido e promover o meu crescimento, tanto pessoal quanto profissional. Este é o meu primeiro projeto em que criei tudo do zero, utilizando as habilidades e aprendizados que desenvolvi ao longo desses meses de estudo.
 ## 👯 Clone
 
 Clone esse repositório para sua máquina local usando o comando:
