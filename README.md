@@ -4,7 +4,7 @@
 
 <p align="center">Landing-Page - @Code By Ryan</p>
 
-![Landing Page](https://github.com/user-attachments/assets/4d270a6d-fe20-495e-a1e2-8160b080e292)
+![Image](https://github.com/user-attachments/assets/81fbd67c-dbc7-46f0-965f-9acd150f4292)
 
 ## 🚀 Apresentação
 
