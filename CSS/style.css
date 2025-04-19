@@ -514,11 +514,13 @@ h4.cardapio {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .features-caixas {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap; /* Permite que as caixas quebrem linha no mobile */
 }
 
 .features-content {
@@ -527,15 +529,22 @@ h4.cardapio {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Altura fixa */
+  height: auto; /* Retira a altura fixa */
   width: 60vw;
-  padding: 40px;
+  max-width: 300px; /* Limita a largura em telas muito grandes */
+  padding: 20px; /* Reduz o padding para um ajuste mais confortável */
   border-radius: 15px;
   backdrop-filter: blur(10px);
   border: 5px solid transparent;
   box-shadow: 0 10px 10px rgb(0, 0, 0, 0.05);
-  translate: 0.2s;
-  overflow: hidden; /* Impede conteúdo de estourar */
+  transition: 0.2s; /* Corrige o translate */
+  overflow: hidden; /* Impede o conteúdo de sair da caixa */
+}
+
+.features-content h3,
+.features-content p {
+  margin: 10px 0; /* Adiciona margens para separar os elementos internos */
+  text-align: center; /* Centraliza o texto */
 }
 
 .features-content:hover {
@@ -550,22 +559,17 @@ h4.cardapio {
 
 @media (max-width: 850px) {
   .features-caixas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    height: 40rem;
-    padding-bottom: 10rem;
+    padding-left: 2rem; /* Um pouco mais de padding para não ficar "colado" na borda */
+    padding-right: 2rem; /* Um pouco mais de padding para não ficar "colado" na borda */
+    gap: 15px; /* Reduz a distância entre os itens para melhor compactação */
   }
 
   .features-content {
-    height: 10rem;
-    width: 70vw;
-    padding: 40px;
-    overflow: hidden;
-    font-size: 11px;
-    line-height: 30px;
+    width: 100%; /* Faz com que as caixas ocupem 100% da largura disponível */
+    max-width: 320px; /* Limita a largura das caixas */
+    font-size: 0.875rem; /* 14px para manter legibilidade */
+    line-height: 1.5rem; /* Boa altura de linha para leitura */
+    padding: 1rem; /* Mantém o padding */
   }
 }
 
@@ -612,6 +616,8 @@ h4.cardapio {
 
 .img-comment {
   width: 35%;
+  aspect-ratio: 1 / 1; /* deixa a imagem sempre quadrada */
+  object-fit: cover; /* garante que a imagem preencha o espaço sem deformar */
   border-radius: 50%;
 }
 
