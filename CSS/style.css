@@ -517,9 +517,9 @@ h4.cardapio {
 
 .features-caixas {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap; /* Permite que as caixas quebrem linha no mobile */
 }
 
