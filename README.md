@@ -6,7 +6,7 @@
 
 ![Image](https://github.com/user-attachments/assets/81fbd67c-dbc7-46f0-965f-9acd150f4292)
 
-## 🚀 Apresentação
+## 🚀 Apresentaçãoo
 
 Este projeto foi desenvolvido sozinho, onde criei uma landing page responsiva para uma pizzaria.
 
