@@ -15,7 +15,7 @@ O objetivo deste projeto não é de natureza comercial, mas sim compartilhar o c
 
 Clone esse repositório para sua máquina local usando o comando:
 
-`$ git clone https://github.com/CodeBy-Ryan/LandingPage-pizza.git`
+`$ git clone https://github.com/CodeBy-Ryan/landing-page-pizza.git`
 
 ## 📌 Contato
 
